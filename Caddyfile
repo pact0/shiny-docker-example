@@ -1,6 +1,7 @@
 tls ./shiny.pem ./shiny-key.pem
 {$HOST} {
     root * /srv
+    tls /root/certs/domain.cert /root/certs/domain.key
     handle_path /hello/* {
         reverse_proxy hello:3838
     }

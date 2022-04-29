@@ -24,6 +24,7 @@ services:
       - '443:443'
     volumes:
       - $PWD/Caddyfile:/etc/caddy/Caddyfile
+      - $PWD/certs:/root/certs
       - $PWD/site:/srv
       - $PWD/log:/var/log/caddy
       - caddy_data:/data
