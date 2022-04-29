@@ -1,3 +1,4 @@
+tls ./shiny.pem ./shiny-key.pem
 {$HOST} {
     root * /srv
     handle_path /hello/* {

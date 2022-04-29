@@ -33,7 +33,7 @@ services:
       - pink
       - covidapp
     environment:
-      - HOST=":80"
+      - HOST=":443"
 volumes:
   caddy_data:
   caddy_config:
